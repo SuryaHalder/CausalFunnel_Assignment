@@ -1,0 +1,20 @@
+# Render Blueprint for the BACKEND only (API + tracker.js + demo pages).
+# The React dashboard is deployed separately on Vercel (see frontend/vercel.json).
+services:
+  - type: web
+    name: pathlight-api
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false # paste your Atlas string in Render; never commit it
+      - key: CORS_ORIGIN
+        sync: false # your Vercel URL, e.g. https://pathlight.vercel.app

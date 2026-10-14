@@ -1,0 +1,15 @@
+{
+  "name": "pathlight",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple user analytics: tracking script, Node/Express API, MongoDB, React dashboard",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "seed": "npm run seed --prefix backend"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
