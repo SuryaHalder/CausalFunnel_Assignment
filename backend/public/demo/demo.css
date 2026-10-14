@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #222; background: #fafaf7; }
+header { display: flex; align-items: center; justify-content: space-between; height: 64px; padding: 0 5%; background: #1e3a34; color: #fff; }
+header .brand { font-weight: 700; font-size: 20px; }
+header nav { display: flex; gap: 24px; }
+header a { color: #fff; text-decoration: none; }
+.hero { padding: 90px 5%; text-align: center; background: #dfeae3; }
+.hero h1 { font-size: 44px; margin: 0 0 12px; }
+.hero p { font-size: 18px; margin: 0 0 28px; color: #445; }
+.btn { display: inline-block; padding: 14px 28px; font-size: 16px; font-weight: 600; color: #fff; background: #d9541e; border: 0; border-radius: 8px; cursor: pointer; text-decoration: none; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; padding: 60px 5%; }
+.card { padding: 24px; background: #fff; border: 1px solid #dde3df; border-radius: 12px; }
+.card .img { height: 220px; margin-bottom: 16px; background: #c9d8cf; border-radius: 8px; }
+.card h3 { margin: 0 0 6px; }
+.card p { margin: 0 0 16px; color: #556; }
+.form { max-width: 520px; margin: 50px auto; padding: 0 5%; }
+.form label { display: block; margin: 18px 0 6px; font-weight: 600; }
+.form input { width: 100%; padding: 12px; font-size: 16px; border: 1px solid #bcc7c0; border-radius: 6px; }
+.form .btn { margin-top: 28px; width: 100%; }
+footer { padding: 40px 5%; text-align: center; color: #667; }
+.spacer { height: 260px; }
