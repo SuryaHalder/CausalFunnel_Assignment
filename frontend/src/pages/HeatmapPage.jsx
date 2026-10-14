@@ -70,6 +70,18 @@ export default function HeatmapPage() {
           />
           Show page behind clicks
         </label>
+
+        <button
+          type="button"
+          className="btn"
+          onClick={() => {
+            pagesQuery.refetch();
+            heatmapQuery.refetch();
+          }}
+          disabled={pagesQuery.loading || heatmapQuery.loading}
+        >
+          {pagesQuery.loading || heatmapQuery.loading ? "Refreshing..." : "Refresh"}
+        </button>
       </div>
 
       {heatmapQuery.loading && !heatmap && <Loader label="Loading clicks..." />}
